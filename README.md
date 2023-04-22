@@ -40,7 +40,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Age Calculator](https://agee-calculatorr.netlify.app/)
-- Live Site URL: [Github Repo](https://github.com/anye-web/Age-Calculator)
+- GitHub: [Github Repo](https://github.com/anye-web/Age-Calculator)
 
 ## My process
 
