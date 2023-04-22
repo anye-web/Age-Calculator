@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.2rem;
+  background-color: hsl(0, 0%, 94%);
+  color: hsl(0, 0%, 8%);
+}
+
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 4rem;
+}
+
+.img {
+  width: 5rem;
+}
+
+.btn {
+  width: 9.6rem;
+  height: 9.6rem;
+  border-radius: 50%;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(259, 100%, 65%);
+  cursor: pointer;
+  transition: all 0.5s ease;
+  position: absolute;
+  top: -5rem;
+  right: 0;
+}
+.btn:hover {
+  background-color: hsl(0, 0%, 8%);
+}
+
+.error {
+  border-color: hsl(0, 100%, 67%) !important;
+}
+
+.show {
+  display: block !important;
+  opacity: 1 !important;
+}
+
+.message-error {
+  color: hsl(0, 100%, 67%) !important;
+}
+
+.content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content .form-container {
+  background-color: hsl(0, 0%, 100%);
+  padding: 5.6rem;
+  border-radius: 2.4rem 2.4rem 20rem 2.4rem;
+}
+.content .form-container .form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3.2rem;
+}
+.content .form-container .form-group {
+  display: flex;
+  flex-direction: column;
+}
+.content .form-container .form-group label {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: hsl(0, 1%, 44%);
+  font-weight: 700;
+  line-height: 2.1rem;
+  letter-spacing: 0.25em;
+  margin-bottom: 1rem;
+}
+.content .form-container .form-group .message {
+  font-size: 1.2rem;
+  line-height: 2.1rem;
+  padding-top: 8px;
+  font-weight: 400;
+  font-style: italic;
+  color: hsl(0, 100%, 67%);
+  display: none;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.content .form-container .form-control {
+  padding: 1.2rem 2.4rem;
+  border: 1px solid hsl(0, 0%, 86%);
+  color: hsl(0, 0%, 8%);
+  font-size: 3.2rem;
+  line-height: 4.8rem;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all 0.5s ease;
+  width: 100%;
+  border-radius: 1rem;
+  outline: none;
+  caret-color: hsl(259, 100%, 65%);
+}
+.content .form-container .form-control::placeholder {
+  color: hsl(0, 1%, 44%);
+  font-size: 3.2rem;
+  line-height: 4.8rem;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.content .form-container .form-control:focus {
+  border-color: hsl(259, 100%, 65%);
+}
+.content .form-container .form-divider {
+  position: relative;
+  margin: 4.75rem 0;
+}
+.content .form-container .form-divider__line {
+  width: 100%;
+  height: 1px;
+  background-color: hsl(0, 0%, 86%);
+}
+.content .form-container .form-info .lead-txt {
+  font-size: 10.4rem;
+  color: hsl(0, 0%, 8%);
+  font-weight: 800;
+  line-height: 11.4rem;
+  letter-spacing: -0.02em;
+}
+.content .form-container .form-info .result-txt {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+.content .form-container .form-info .result {
+  color: hsl(259, 100%, 65%);
+}
+.content .form-container .form-info span {
+  color: hsl(259, 100%, 65%);
+}
+
+@media (min-width: 37.5em) and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (min-width: 25em) and (max-width: 37.5em) {
+  html {
+    font-size: 38%;
+  }
+}
+@media (min-width: 0em) and (max-width: 25em) {
+  html {
+    font-size: 28%;
+  }
+}
